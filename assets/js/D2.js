@@ -2,6 +2,7 @@
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 
+/* 
 const numb1 = parseInt(window.prompt("Inserisci il primo numero"));
 const numb2 = parseInt(window.prompt("Inserisci il secondo numero"));
 
@@ -19,11 +20,22 @@ if (numb1 > numb2) {
   console.log(numb1 + " è più grande di " + numb2);
 } else {
   console.log(numb2 + " è più grande di " + numb1);
-}
+} 
+  */
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
+
+const number = parseInt(window.prompt());
+
+// Con OPERATORE TERNARIO
+console.log(number === 5 ? "Equal" : "Not equal");
+
+// Con IF/ELSE
+if (number !== 5) {
+  console.log("Not equal");
+}
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
