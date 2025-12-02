@@ -43,6 +43,7 @@ if (number !== 5) {
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
 */
 
+/* 
 const number = parseInt(window.prompt());
 const remainder = number % 5;
 
@@ -52,13 +53,31 @@ console.log(remainder === 0 ? "Divisibile per 5" : "Non divisibile per 5");
 // Con IF/ELSE
 if (remainder === 0) {
   console.log("Divisibile per 5");
-}
+} 
+  */
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const numb1 = parseInt(window.prompt("Inserisci il primo numero"));
+const numb2 = parseInt(window.prompt("Inserisci il secondo numero"));
+const sum = numb1 + numb2;
+const difference = numb1 - numb2;
+
+// Con OPERATORE TERNARIO
+console.log(numb1 === 8 || numb2 === 8 || sum === 8 || difference === 8 ? "Verificato" : "Non verificato");
+
+// Con IF/ELSE
+if (numb1 === 8) {
+  console.log("Il primo numero è uguale a 8");
+} else if (numb2 === 8) {
+  console.log("Il secondo numero è uguale a 8");
+} else if (sum === 8) {
+  console.log("La somma tra i due numeri è pari a 8");
+} else if (difference === 8) {
+  console.log("La differenza tra i due numeri è pari a 8");
+}
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
