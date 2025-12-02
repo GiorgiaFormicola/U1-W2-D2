@@ -2,8 +2,7 @@
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 
-/* 
-const numb1 = parseInt(window.prompt("Inserisci il primo numero"));
+/* const numb1 = parseInt(window.prompt("Inserisci il primo numero"));
 const numb2 = parseInt(window.prompt("Inserisci il secondo numero"));
 
 console.log("Primo numero", numb1);
@@ -12,7 +11,7 @@ console.log("Primo numero", typeof numb1);
 console.log("Secondo numero", numb2);
 console.log("Secondo numero", typeof numb2);
 
-// Con OPERATORE TERNARIO12
+// Con OPERATORE TERNARIO
 console.log(numb1 > numb2 ? numb1 + " è più grande di " + numb2 : numb2 + " è più grande di " + numb1);
 
 // Con IF/ELSE
@@ -20,14 +19,15 @@ if (numb1 > numb2) {
   console.log(numb1 + " è più grande di " + numb2);
 } else if (numb2 > numb1) {
   console.log(numb2 + " è più grande di " + numb1);
-} 
-  */
+} else {
+  console.log(numb1 + " è uguale a " + numb2)
+}*/
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
-
 /* 
+
 const number = parseInt(window.prompt());
 
 // Con OPERATORE TERNARIO
@@ -36,8 +36,7 @@ console.log(number === 5 ? "Equal" : "Not equal");
 // Con IF/ELSE
 if (number !== 5) {
   console.log("Not equal");
-} 
-  */
+}  */
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
@@ -89,14 +88,14 @@ if (numb1 === 8) {
 
 /* 
 let totalShoppingCart = 100;
-const expedition = [0, 10];
-let totalCheckout = totalShoppingCart + expedition;
+const shipping = [0, 10];
+let totalCheckout = totalShoppingCart + shipping;
 
 if (totalShoppingCart >= 50) {
-  totalCheckout = totalShoppingCart + expedition[0];
+  totalCheckout = totalShoppingCart + shipping[0];
   console.log("Totale checkout = ", totalCheckout + " euro");
 } else {
-  totalCheckout = totalShoppingCart + expedition[1];
+  totalCheckout = totalShoppingCart + shipping[1];
   console.log("Totale checkout = ", totalCheckout + " euro");
 }
  */
@@ -109,14 +108,14 @@ if (totalShoppingCart >= 50) {
 /* 
 let totalShoppingCart = 40;
 const discount = totalShoppingCart * 0.2;
-const expedition = [0, 10];
-let totalCheckout = totalShoppingCart - discount + expedition;
+const shipping = [0, 10];
+let totalCheckout = totalShoppingCart - discount + shipping;
 
 if (totalShoppingCart >= 50) {
-  totalCheckout = totalShoppingCart - discount + expedition[0];
+  totalCheckout = totalShoppingCart - discount + shipping[0];
   console.log("Totale checkout = ", totalCheckout + " euro");
 } else {
-  totalCheckout = totalShoppingCart - discount + expedition[1];
+  totalCheckout = totalShoppingCart - discount + shipping[1];
   console.log("Totale checkout = ", totalCheckout + " euro");
 }
  */
@@ -191,11 +190,11 @@ if (remainder === 0) {
     }
 */
 
-/* let val = 12;
-if (val < 10 && val >= 5) {
-  console.log("Meno di 10");
-} else if (val < 5) {
+/* let val = 3;
+if (val < 5) {
   console.log("Meno di 5");
+} else if (val < 10) {
+  console.log("Meno di 10");
 } else {
   console.log("Uguale a 10 o maggiore");
 } */
@@ -204,20 +203,34 @@ if (val < 10 && val >= 5) {
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
 */
 
-const me = {
+/* const me = {
   name: "John",
   lastName: "Doe",
   skills: ["javascript", "html", "css"],
-  city: "Toronto",
-};
+}; */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* me.city = "Toronto";
+
+console.table(me);
+ */
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* const me = {
+  name: "John",
+  lastName: "Doe",
+  skills: ["javascript", "html", "css"],
+};
+
+me.city = "Toronto";
+
+console.table(me);
+
+delete me.lastName;
+
+console.table(me); */
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
