@@ -18,7 +18,7 @@ console.log(numb1 > numb2 ? numb1 + " è più grande di " + numb2 : numb2 + " è
 // Con IF/ELSE
 if (numb1 > numb2) {
   console.log(numb1 + " è più grande di " + numb2);
-} else {
+} else if (numb2 > numb1) {
   console.log(numb2 + " è più grande di " + numb1);
 } 
   */
@@ -127,35 +127,34 @@ if (totalShoppingCart >= 50) {
   Alla fine mostra il risultato in console.
 */
 
-/* const a = 2;
-const b = 3;
+const a = 8;
+const b = 10;
 const c = 1;
 const aAsString = a.toString();
 const bAsString = b.toString();
 const cAsString = c.toString();
 let constOrdered = [aAsString, bAsString, cAsString];
-const numbList = constOrdered[0] + ", " + constOrdered[1] + ", " + constOrdered[2];
+let numbList = constOrdered[0] + ", " + constOrdered[1] + ", " + constOrdered[2];
 
 if (a > b && b > c) {
-  constOrdered = [aAsString, bAsString, cAsString];
+  numbList = constOrdered[0] + ", " + constOrdered[1] + ", " + constOrdered[2];
   console.log(numbList);
 } else if (a > c && c > b) {
-  constOrdered = [aAsString, cAsString, bAsString];
+  numbList = constOrdered[0] + ", " + constOrdered[2] + ", " + constOrdered[1];
   console.log(numbList);
 } else if (b > a && a > c) {
-  constOrdered = [bAsString, aAsString, cAsString];
+  numbList = constOrdered[1] + ", " + constOrdered[0] + ", " + constOrdered[2];
   console.log(numbList);
 } else if (b > c && c > a) {
-  constOrdered = [bAsString, cAsString, aAsString];
+  numbList = constOrdered[1] + ", " + constOrdered[2] + ", " + constOrdered[0];
   console.log(numbList);
 } else if (c > a && a > b) {
-  constOrdered = [cAsString, aAsString, bAsString];
+  numbList = constOrdered[2] + ", " + constOrdered[0] + ", " + constOrdered[1];
   console.log(numbList);
 } else if (c > a && b > a) {
-  constOrdered = [cAsString, bAsString, aAsString];
+  numbList = constOrdered[2] + ", " + constOrdered[1] + ", " + constOrdered[0];
   console.log(numbList);
-} */
-// DA VERIFICARE
+}
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
@@ -171,14 +170,14 @@ if (typeof value === "number") {
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
-const number = parseInt(window.prompt());
+/* const number = parseInt(window.prompt());
 const remainder = number % 2;
 
 if (remainder === 0) {
   console.log(number + " è un numero pari");
 } else {
   console.log(number + " è un numero dispari");
-}
+} */
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
@@ -192,17 +191,24 @@ if (remainder === 0) {
     }
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+// let val = 3;
+// if (val < 10) {
+//   console.log("Meno di 10");
+// } else if (val < 5) {
+//   console.log("Meno di 5");
+// } else {
+//   console.log("Uguale a 10 o maggiore");
+// }
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
 */
 
-const me = {
+/* const me = {
   name: "John",
   lastName: "Doe",
   skills: ["javascript", "html", "css"],
-};
+}; */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
