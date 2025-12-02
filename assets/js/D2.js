@@ -2,13 +2,28 @@
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const numb1 = parseInt(window.prompt("Inserisci il primo numero"));
+const numb2 = parseInt(window.prompt("Inserisci il secondo numero"));
+
+console.log("Primo numero", numb1);
+console.log("Primo numero", typeof numb1);
+
+console.log("Secondo numero", numb2);
+console.log("Secondo numero", typeof numb2);
+
+// Con OPERATORE TERNARIO12
+console.log(numb1 > numb2 ? numb1 + " è più grande di " + numb2 : numb2 + " è più grande di " + numb1);
+
+// Con IF/ELSE
+if (numb1 > numb2) {
+  console.log(numb1 + " è più grande di " + numb2);
+} else {
+  console.log(numb2 + " è più grande di " + numb1);
+}
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
