@@ -106,6 +106,7 @@ if (totalShoppingCart >= 50) {
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
+/* 
 let totalShoppingCart = 40;
 const discount = totalShoppingCart * 0.2;
 const expedition = [0, 10];
@@ -118,6 +119,7 @@ if (totalShoppingCart >= 50) {
   totalCheckout = totalShoppingCart - discount + expedition[1];
   console.log("Totale checkout = ", totalCheckout + " euro");
 }
+ */
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -125,13 +127,45 @@ if (totalShoppingCart >= 50) {
   Alla fine mostra il risultato in console.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* const a = 2;
+const b = 3;
+const c = 1;
+const aAsString = a.toString();
+const bAsString = b.toString();
+const cAsString = c.toString();
+let constOrdered = [aAsString, bAsString, cAsString];
+const numbList = constOrdered[0] + ", " + constOrdered[1] + ", " + constOrdered[2];
+
+if (a > b && b > c) {
+  constOrdered = [aAsString, bAsString, cAsString];
+  console.log(numbList);
+} else if (a > c && c > b) {
+  constOrdered = [aAsString, cAsString, bAsString];
+  console.log(numbList);
+} else if (b > a && a > c) {
+  constOrdered = [bAsString, aAsString, cAsString];
+  console.log(numbList);
+} else if (b > c && c > a) {
+  constOrdered = [bAsString, cAsString, aAsString];
+  console.log(numbList);
+} else if (c > a && a > b) {
+  constOrdered = [cAsString, aAsString, bAsString];
+  console.log(numbList);
+} else if (c > a && b > a) {
+  constOrdered = [cAsString, bAsString, aAsString];
+  console.log(numbList);
+} */
+// DA VERIFICARE
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let value = 1;
+
+if (typeof value === "number") {
+  console.log(value + " is a number");
+}
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
