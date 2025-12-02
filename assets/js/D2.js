@@ -127,7 +127,7 @@ if (totalShoppingCart >= 50) {
   Alla fine mostra il risultato in console.
 */
 
-const a = 8;
+/* const a = 8;
 const b = 10;
 const c = 1;
 const aAsString = a.toString();
@@ -154,7 +154,7 @@ if (a > b && b > c) {
 } else if (c > a && b > a) {
   numbList = constOrdered[2] + ", " + constOrdered[1] + ", " + constOrdered[0];
   console.log(numbList);
-}
+} */
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
@@ -191,14 +191,14 @@ if (remainder === 0) {
     }
 */
 
-// let val = 3;
-// if (val < 10) {
-//   console.log("Meno di 10");
-// } else if (val < 5) {
-//   console.log("Meno di 5");
-// } else {
-//   console.log("Uguale a 10 o maggiore");
-// }
+let val = 12;
+if (val < 10 && val >= 5) {
+  console.log("Meno di 10");
+} else if (val < 5) {
+  console.log("Meno di 5");
+} else {
+  console.log("Uguale a 10 o maggiore");
+}
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
