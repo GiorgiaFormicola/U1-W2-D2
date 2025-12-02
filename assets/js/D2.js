@@ -87,6 +87,7 @@ if (numb1 === 8) {
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
+/* 
 let totalShoppingCart = 100;
 const expedition = [0, 10];
 let totalCheckout = totalShoppingCart + expedition;
@@ -98,13 +99,25 @@ if (totalShoppingCart >= 50) {
   totalCheckout = totalShoppingCart + expedition[1];
   console.log("Totale checkout = ", totalCheckout + " euro");
 }
+ */
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let totalShoppingCart = 40;
+const discount = totalShoppingCart * 0.2;
+const expedition = [0, 10];
+let totalCheckout = totalShoppingCart - discount + expedition;
+
+if (totalShoppingCart >= 50) {
+  totalCheckout = totalShoppingCart - discount + expedition[0];
+  console.log("Totale checkout = ", totalCheckout + " euro");
+} else {
+  totalCheckout = totalShoppingCart - discount + expedition[1];
+  console.log("Totale checkout = ", totalCheckout + " euro");
+}
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
