@@ -161,17 +161,24 @@ if (a > b && b > c) {
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
-let value = 1;
+/* let value = 1;
 
 if (typeof value === "number") {
   console.log(value + " is a number");
-}
+} */
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const number = parseInt(window.prompt());
+const remainder = number % 2;
+
+if (remainder === 0) {
+  console.log(number + " è un numero pari");
+} else {
+  console.log(number + " è un numero dispari");
+}
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
