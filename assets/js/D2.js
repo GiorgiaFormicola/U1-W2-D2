@@ -60,6 +60,7 @@ if (remainder === 0) {
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
+/* 
 const numb1 = parseInt(window.prompt("Inserisci il primo numero"));
 const numb2 = parseInt(window.prompt("Inserisci il secondo numero"));
 const sum = numb1 + numb2;
@@ -78,6 +79,7 @@ if (numb1 === 8) {
 } else if (difference === 8) {
   console.log("La differenza tra i due numeri è pari a 8");
 }
+ */
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -85,7 +87,17 @@ if (numb1 === 8) {
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let totalShoppingCart = 100;
+const expedition = [0, 10];
+let totalCheckout = totalShoppingCart + expedition;
+
+if (totalShoppingCart >= 50) {
+  totalCheckout = totalShoppingCart + expedition[0];
+  console.log("Totale checkout = ", totalCheckout + " euro");
+} else {
+  totalCheckout = totalShoppingCart + expedition[1];
+  console.log("Totale checkout = ", totalCheckout + " euro");
+}
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
