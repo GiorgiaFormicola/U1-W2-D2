@@ -258,14 +258,32 @@ console.table(me); */
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
+/* let array = [];
+
+array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+console.log(array); */
+
+/* ESERCIZIO 15
+  Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
+*/
+
 let array = [];
 
 array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 console.log(array);
 
-/* ESERCIZIO 15
-  Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
-*/
+array.pop();
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+console.log(array);
+
+array.push(100);
+
+console.log(array);
+
+// oppure
+
+array.splice(9, 1, 100);
+
+console.log(array);
