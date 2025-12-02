@@ -27,6 +27,7 @@ if (numb1 > numb2) {
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
 
+/* 
 const number = parseInt(window.prompt());
 
 // Con OPERATORE TERNARIO
@@ -35,13 +36,23 @@ console.log(number === 5 ? "Equal" : "Not equal");
 // Con IF/ELSE
 if (number !== 5) {
   console.log("Not equal");
-}
+} 
+  */
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const number = parseInt(window.prompt());
+const remainder = number % 5;
+
+// Con OPERATORE TERNARIO
+console.log(remainder === 0 ? "Divisibile per 5" : "Non divisibile per 5");
+
+// Con IF/ELSE
+if (remainder === 0) {
+  console.log("Divisibile per 5");
+}
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
